@@ -23,14 +23,14 @@ public class FGIndexController {
 
     private final FGIndexService fgIndexService;
 
-    //공포탐욕지수를 조회하는 GET 요청
+   //공포탐욕지수를 조회하는 GET 요청
     @GetMapping("/{date}")
-    public ResponseEntity<FGIndexResponse> getFearGreedIndex(@PathVariable @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate date) {
+    public ApiResponse<FGIndexResponse> getFearGreedIndex(@PathVariable @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate date) {
         FGIndex fgIndex = fgIndexService.getIndexByDate(date);
         if (fgIndex == null) {
-            return ResponseEntity.notFound().build();
+            return ApiResponse.onFailure("404", "Index not found for the provided date", null);
         }
         FGIndexResponse response = new FGIndexResponse(fgIndex.getDate(), fgIndex.getScore(), fgIndex.getStatus());
-        return ResponseEntity.ok(response);
+        return ApiResponse.onSuccess(response);
     }
 }
