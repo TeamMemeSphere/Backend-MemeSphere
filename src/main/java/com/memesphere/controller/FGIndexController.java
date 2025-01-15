@@ -25,7 +25,7 @@ public class FGIndexController {
 
     private final FGIndexService fgIndexService;
 
-    //공포탐욕지수를 조회하는 GET 요청
+   //공포탐욕지수를 조회하는 GET 요청
     @GetMapping("/{date}")
     public ApiResponse<FGIndexResponse> getFearGreedIndex(@PathVariable @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate date) {
         FGIndex fgIndex = fgIndexService.getIndexByDate(date);
