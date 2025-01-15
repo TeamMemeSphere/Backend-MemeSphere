@@ -45,7 +45,7 @@ public class Trading extends BaseEntity {
     private BigDecimal high_price;
 
     @Column
-    private BigDecimal change;
+    private BigDecimal variation;
 
     @ManyToOne(fetch=FetchType.LAZY)
     @JoinColumn(name="user_id")

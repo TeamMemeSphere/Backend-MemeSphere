@@ -1,5 +1,7 @@
 package com.memesphere.service;
 
+import com.memesphere.apipayload.code.status.ErrorStatus;
+import com.memesphere.apipayload.exception.GeneralException;
 import com.memesphere.domain.FGIndex;
 import com.memesphere.repository.FGIndexRepository;
 import lombok.RequiredArgsConstructor;
@@ -14,9 +16,8 @@ public class FGIndexService {
     private final FGIndexRepository fgIndexRepository;
 
     public FGIndex getIndexByDate(LocalDate date) {
-        if (date == null) {
-            throw new IllegalArgumentException("Date cannot be null");
-        }
-        return fgIndexRepository.findByDate(date).orElse(null);
+        return fgIndexRepository.findByDate(date)
+                .orElseThrow(() -> new GeneralException(ErrorStatus.DATE_NOT_FOUND));
     }
+
 }
