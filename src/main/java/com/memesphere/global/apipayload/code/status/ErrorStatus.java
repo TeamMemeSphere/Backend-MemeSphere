@@ -30,7 +30,11 @@ public enum ErrorStatus implements BaseCode {
     USER_NOT_FOUND(HttpStatus.NOT_FOUND, "USER NOT FOUND", "유저를 찾을 수 없습니다."),
     PASSWORD_NOT_MATCH(HttpStatus.NOT_FOUND, "PASSWORD NOT MATCH", "비밀번호가 틀렸습니다."),
     USER_ALREADY_EXISTS(HttpStatus.BAD_REQUEST, "USER ALREADY EXIST ", "이미 존재하는 회원입니다."),
-    NICKNAME_ALREADY_EXISTS(HttpStatus.BAD_REQUEST, "NICKNAME ALREADY EXIST ", "이미 사용 중인 닉네임입니다.");
+    NICKNAME_ALREADY_EXISTS(HttpStatus.BAD_REQUEST, "NICKNAME ALREADY EXIST ", "이미 사용 중인 닉네임입니다."),
+
+    // 이미지 에러
+    EMPTY_FILE_EXCEPTION(HttpStatus.BAD_REQUEST, "EMPTY_FILE", "이미지가 빈 파일입니다."),
+    INVALID_FILE_EXTENTION(HttpStatus.BAD_REQUEST, "INVALID FILE EXTENSION", "지원되지 않는 파일 형식입니다.");
 
     private final HttpStatus httpStatus;
     private final String code;
