@@ -2,168 +2,168 @@
   {
     "name": "Dogecoin",
     "symbol": "DOGE",
-    "image": "memecoin-img/doge.png",
-    "description": "Dogecoin",
+    "image": "https://umc-meme.s3.ap-northeast-2.amazonaws.com/meme-coin/doge.png",
+    "description": "2013년에 시작된 세계 최초의 밈코인으로, 시바견 밈에서 영감을 받아 만들어졌습니다.",
     "collectionActive": false,
     "keywords": ["Animal", "Hot", "Accessible"]
   },
   {
     "name": "SHIBA INU",
     "symbol": "SHIB",
-    "image": "memecoin-img/shib.png",
-    "description": "SHIBA INU",
+    "image": "https://umc-meme.s3.ap-northeast-2.amazonaws.com/meme-coin/shib.png",
+    "description": "'도지코인 킬러'를 목표로 등장한 ERC-20 기반 밈코인으로, NFT와 탈중앙화 거래소 ShibaSwap을 통해 생태계를 확장하고 있습니다.",
     "collectionActive": false,
     "keywords": ["Animal", "Inu", "Trending"]
   },
   {
     "name": "OFFICIAL TRUMP",
     "symbol": "TRUMP",
-    "image": "memecoin-img/trump.png",
-    "description": "OFFICIAL TRUMP",
+    "image": "https://umc-meme.s3.ap-northeast-2.amazonaws.com/meme-coin/trump.png",
+    "description": "도널드 트럼프를 테마로 한 정치적 밈코인입니다.",
     "collectionActive": false,
     "keywords": ["Political", "Meme", "Viral"]
   },
   {
     "name": "Pepe",
     "symbol": "PEPE",
-    "image": "memecoin-img/pepe.png",
-    "description": "Pepe",
+    "image": "https://umc-meme.s3.ap-northeast-2.amazonaws.com/meme-coin/pepe.png",
+    "description": "인기 밈 캐릭터 '페페 개구리'를 기반으로 한 밈코인입니다.",
     "collectionActive": false,
     "keywords": ["Meme", "Ethereum", "No-Tax"]
   },
   {
     "name": "Bonk",
     "symbol": "BONK",
-    "image": "memecoin-img/bonk.png",
-    "description": "Bonk",
+    "image": "https://umc-meme.s3.ap-northeast-2.amazonaws.com/meme-coin/bonk.png",
+    "description": "Solana 생태계에서 출시된 커뮤니티 주도형 코인으로, 사용자를 위한 \"솔라나의 도지코인\"을 목표로 합니다.",
     "collectionActive": false,
     "keywords": ["Animal", "Solana", "Airdrop"]
   },
   {
     "name": "Pudgy Penguins",
     "symbol": "PENGU",
-    "image": "memecoin-img/pengu.png",
-    "description": "Pudgy Penguins",
+    "image": "https://umc-meme.s3.ap-northeast-2.amazonaws.com/meme-coin/pengu.png",
+    "description": "NFT 프로젝트와 연결되어 귀여운 펭귄 캐릭터로 커뮤니티와 수집성을 강화하고자 발행되었습니다.",
     "collectionActive": false,
     "keywords": ["Animal", "NFT", "Collectibles"]
   },
   {
     "name": "Dogwifhat",
     "symbol": "WIF",
-    "image": "memecoin-img/wif.png",
-    "description": "Dogwifhat",
+    "image": "https://umc-meme.s3.ap-northeast-2.amazonaws.com/meme-coin/wif.png",
+    "description": "모자를 쓴 강아지라는 독특한 캐릭터로 재미와 시각적 매력을 강조한 밈코인입니다.",
     "collectionActive": false,
     "keywords": ["Animal", "Solana", "Community"]
   },
   {
     "name": "FLOKI",
     "symbol": "FLOKI",
-    "image": "memecoin-img/floki.png",
-    "description": "FLOKI",
+    "image": "https://umc-meme.s3.ap-northeast-2.amazonaws.com/meme-coin/floki.png",
+    "description": "일론 머스크가 자신의 시바견 이름을 따서 언급한 뒤 탄생한 밈코인으로, NFT 게임 및 메타버스 프로젝트와 연결되어 있습니다.",
     "collectionActive": false,
     "keywords": ["Animal", "Elon Musk", "Web3"]
   },
   {
     "name": "aixbt by Virtuals",
     "symbol": "AIXBT",
-    "image": "memecoin-img/aixbt.png",
-    "description": "aixbt by Virtuals",
+    "image": "https://umc-meme.s3.ap-northeast-2.amazonaws.com/meme-coin/aixbt.png",
+    "description": "AI 기술과 가상세계 테마를 결합하여 창의적인 암호화폐 경험을 제공합니다.",
     "collectionActive": false,
     "keywords": ["AI", "Market Intelligence", "Community"]
   },
   {
     "name": "Turbo",
     "symbol": "TURBO",
-    "image": "memecoin-img/turbo.png",
-    "description": "Turbo",
+    "image": "https://umc-meme.s3.ap-northeast-2.amazonaws.com/meme-coin/turbo.png",
+    "description": "고속 개발과 커뮤니티 중심으로 성장한 코인으로, 창작자와 밈 애호가들에게 인기가 있습니다.",
     "collectionActive": false,
     "keywords": ["AI", "Decentralized", "Fast"]
   },
   {
     "name": "ORDI",
     "symbol": "ORDI",
-    "image": "memecoin-img/ordi.png",
-    "description": "ORDI",
+    "image": "https://umc-meme.s3.ap-northeast-2.amazonaws.com/meme-coin/ordi.png",
+    "description": "비트코인 네트워크 상에서 오디널스(Ordinals) 프로토콜을 활용해 만들어져 희소성을 지녔습니다.",
     "collectionActive": false,
     "keywords": ["Bitcoin", "Ordinals", "Tokenization"]
   },
   {
     "name": "Peanut the Squirrel",
     "symbol": "PNUT",
-    "image": "memecoin-img/pnut.png",
-    "description": "Peanut the Squirrel",
+    "image": "https://umc-meme.s3.ap-northeast-2.amazonaws.com/meme-coin/pnut.png",
+    "description": "다람쥐 캐릭터 '피넛'을 활용한 재미와 독창성이 돋보이는 밈코인으로, 소셜 플랫폼에서 인기를 얻었습니다.",
     "collectionActive": false,
     "keywords": ["Animal", "Viral", "Tribute"]
   },
   {
     "name": "1M x BABYDOGE",
     "symbol": "1MBABYDOGE",
-    "image": "memecoin-img/babydoge.png",
-    "description": "1M x BABYDOGE",
+    "image": "https://umc-meme.s3.ap-northeast-2.amazonaws.com/meme-coin/babydoge.png",
+    "description": "BabyDoge의 대량 버전으로, 커뮤니티의 대규모 지지를 받고 있습니다.",
     "collectionActive": false,
     "keywords": ["Animal", "Deflationary", "Meme"]
   },
   {
     "name": "Memecoin",
     "symbol": "MEME",
-    "image": "memecoin-img/meme.png",
-    "description": "Memecoin",
+    "image": "https://umc-meme.s3.ap-northeast-2.amazonaws.com/meme-coin/meme.png",
+    "description": "인터넷 밈 문화를 암호화폐에 접목하여 밈 자체가 화폐로 작동하도록 설계되었습니다.",
     "collectionActive": false,
     "keywords": ["Meme", "Web3", "SocialFi"]
   },
   {
     "name": "BOOK OF MEME",
     "symbol": "BOME",
-    "image": "memecoin-img/bome.jpeg",
-    "description": "BOOK OF MEME",
+    "image": "https://umc-meme.s3.ap-northeast-2.amazonaws.com/meme-coin/bome.jpeg",
+    "description": "밈 문화를 기록하고 보존하는 독특한 컨셉의 코인으로, NFT와 결합된 활용 가능성을 가집니다.",
     "collectionActive": false,
     "keywords": ["Meme", "Solana", "Decentralized"]
   },
   {
     "name": "1000*SATS (Ordinals)",
     "symbol": "1000SATS",
-    "image": "memecoin-img/sats.png",
-    "description": "1000*SATS (Ordinals)",
+    "image": "https://umc-meme.s3.ap-northeast-2.amazonaws.com/meme-coin/sats.png",
+    "description": "비트코인 오디널스 생태계의 일부로, 1,000 사토시(비트코인의 단위) 기반으로 발행된 상징적인 토큰입니다.",
     "collectionActive": false,
     "keywords": ["Bitcoin", "Tokenization", "Mining"]
   },
   {
     "name": "First Neiro On Ethereum",
     "symbol": "NEIRO",
-    "image": "memecoin-img/neiro.jpeg",
-    "description": "First Neiro On Ethereum",
+    "image": "https://umc-meme.s3.ap-northeast-2.amazonaws.com/meme-coin/neiro.jpeg",
+    "description": "이더리움 네트워크 상에서 인공지능 과 연결된 첫 번째 밈 프로젝트입니다.",
     "collectionActive": false,
     "keywords": ["Animal", "Ethereum", "Community-Driven"]
   },
   {
     "name": "Dogs",
     "symbol": "DOGS",
-    "image": "memecoin-img/dogs.jpeg",
-    "description": "Dogs",
+    "image": "https://umc-meme.s3.ap-northeast-2.amazonaws.com/meme-coin/dogs.jpeg",
+    "description": "다양한 강아지 밈을 통합하며 커뮤니티와 유머 중심으로 개발된 토큰입니다.",
     "collectionActive": false,
     "keywords": ["Animal", "Telegram", "Charity"]
   },
   {
     "name": "ConstitutionDAO",
     "symbol": "PEOPLE",
-    "image": "memecoin-img/people.png",
-    "description": "ConstitutionDAO",
+    "image": "https://umc-meme.s3.ap-northeast-2.amazonaws.com/meme-coin/people.png",
+    "description": "미국 헌법 원본 구매를 목표로 모금 운동을 벌이며, 대표적인 커뮤니티 기반의 밈코인 성공 사례입니다.",
     "collectionActive": false,
     "keywords": ["DAO", "Ethereum", "Crowdfunding"]
   },
   {
     "name": "Act I: The AI Prophecy",
     "symbol": "ACT",
-    "image": "memecoin-img/act1.png",
-    "description": "Act I: The AI Prophecy",
+    "image": "https://umc-meme.s3.ap-northeast-2.amazonaws.com/meme-coin/act1.png",
+    "description": "AI가 주도하는 미래를 밈과 예언적 스토리라인으로 표현한 독특한 프로젝트입니다.",
     "collectionActive": false,
     "keywords": ["AI", "Decentralized", "Community"]
   },
   {
     "name": "1000*Simons Cat",
     "symbol": "1000CAT",
-    "image": "memecoin-img/simons-cat.png",
-    "description": "1000*Simons Cat",
+    "image": "https://umc-meme.s3.ap-northeast-2.amazonaws.com/meme-coin/simons-cat.png",
+    "description": "인기 애니메이션 캐릭터 '사이먼의 고양이'를 기반으로 한 토큰입니다.",
     "collectionActive": false,
     "keywords": ["Animal", "NFT", "Fan-Driven"]
   }
