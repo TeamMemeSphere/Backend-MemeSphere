@@ -51,11 +51,11 @@ public class UserConverter {
     }
 
     // 비밀번호 찾기 이메일
-    public static EmailResponse toEmailResponse(String tmpPassword, String memberEmail, String title, String message, String fromAddress) {
+    public static EmailResponse toEmailResponse(String tmpPassword, String memberEmail, String title, String fromAddress) {
         return EmailResponse.builder()
                 .toAddress(memberEmail)
                 .title(title)
-                .message(message + tmpPassword)
+                .message(tmpPassword)
                 .fromAddress(fromAddress)
                 .build();
     }

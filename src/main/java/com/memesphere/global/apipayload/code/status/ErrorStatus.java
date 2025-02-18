@@ -50,6 +50,7 @@ public enum ErrorStatus implements BaseCode {
     UNSUPPORTED_TOKEN(HttpStatus.UNAUTHORIZED, "UNSUPPORTED TOKEN", "지원하지 않는 토큰입니다."),
     INVALID_SIGNATURE(HttpStatus.UNAUTHORIZED, "INVALID SIGNATURE", "잘못된 JWT 서명입니다"),
     SOCIAL_LOGIN_NOT_ALLOWED(HttpStatus.FORBIDDEN, "SOCIAL LOGIN NOT ALLOWED", "소셜 로그인 계정으로 비밀번호를 찾을 수 없습니다."),
+    EMAIL_SEND_FAILED(HttpStatus.INTERNAL_SERVER_ERROR, "EMAIL SEND FAILED", "이메일 전송에 실패했습니다."),
 
     // 이미지 에러
     INVALID_FILE_EXTENTION(HttpStatus.BAD_REQUEST, "INVALID FILE EXTENSION", "지원되지 않는 파일 형식입니다."),
