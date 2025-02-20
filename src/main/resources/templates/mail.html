@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-    <head>
-        <meta charset="UTF-8">
-        <title>임시 비밀번호 안내</title>
-    </head>
-    <body>
-        <a th:text="${tmpPassword}"></a>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <title>임시 비밀번호 안내</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css}" />
+    <link rel="stylesheet" type="text/css" href="/static/css/mail.css"/>
+</head>
+
+<body>
+    <span th:text="${tmpPassword}">임시 비밀번호</span>
+    <img src='https://ifh.cc/g/pLfOhs.jpg' alt="Background Image" />
+</body>
 </html>
