@@ -12,6 +12,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 import org.springframework.data.domain.Page;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -56,11 +57,21 @@ public class CollectionConverter {
                 .name(memeCoin.getName())
                 .symbol(memeCoin.getSymbol())
                 .image(memeCoin.getImage())
-                .currentPrice(chartData.getPrice())
-                .highPrice(chartData.getHigh_price())
-                .lowPrice(chartData.getLow_price())
-                .priceChange(chartData.getPriceChange())
-                .priceChangeRate(chartData.getPriceChangeRate())
+                .currentPrice(BigDecimal.valueOf(chartData.getPrice())
+                        .setScale(8, RoundingMode.HALF_UP)
+                        .toPlainString())
+                .highPrice(BigDecimal.valueOf(chartData.getHigh_price())
+                        .setScale(8, RoundingMode.HALF_UP)
+                        .toPlainString())
+                .lowPrice(BigDecimal.valueOf(chartData.getLow_price())
+                        .setScale(8, RoundingMode.HALF_UP)
+                        .toPlainString())
+                .priceChange(BigDecimal.valueOf(chartData.getPriceChange())
+                        .setScale(8, RoundingMode.HALF_UP)
+                        .toPlainString())
+                .priceChangeRate(BigDecimal.valueOf(chartData.getPriceChangeRate())
+                        .setScale(8, RoundingMode.HALF_UP)
+                        .toPlainString())
                 .build();
     }
 
@@ -72,9 +83,15 @@ public class CollectionConverter {
                 .coinId(memeCoin.getId())
                 .name(memeCoin.getName())
                 .symbol(memeCoin.getSymbol())
-                .currentPrice(chartData.getPrice())
-                .priceChangeRate(chartData.getPriceChangeRate())
-                .weightedAveragePrice(chartData.getWeighted_average_price())
+                .currentPrice(BigDecimal.valueOf(chartData.getPrice())
+                        .setScale(8, RoundingMode.HALF_UP)
+                        .toPlainString())
+                .priceChangeRate(BigDecimal.valueOf(chartData.getPriceChangeRate())
+                        .setScale(8, RoundingMode.HALF_UP)
+                        .toPlainString())
+                .weightedAveragePrice(BigDecimal.valueOf(chartData.getWeighted_average_price())
+                        .setScale(8, RoundingMode.HALF_UP)
+                        .toPlainString())
                 .volume(chartData.getVolume())
                 .build();
     }

@@ -8,6 +8,7 @@ import com.memesphere.domain.dashboard.dto.response.DashboardTrendResponse;
 
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
@@ -68,11 +69,19 @@ public class DashboardConverter {
                 .name(memeCoin.getName())
                 .symbol(memeCoin.getSymbol())
                 .volume(data.getVolume())
-                .price(data.getPrice())
-                .priceChange(data.getPriceChange())
-                .priceChangeAbsolute(data.getPriceChange().abs())
-                .priceChangeDirection(data.getPriceChangeRate().compareTo(BigDecimal.ZERO) < 0 ? "down" : "up")
-                .priceChangeRate(data.getPriceChangeRate())
+                .price(BigDecimal.valueOf(data.getPrice())
+                        .setScale(8, RoundingMode.HALF_UP)
+                        .toPlainString())
+                .priceChange(BigDecimal.valueOf(data.getPriceChange())
+                        .setScale(8, RoundingMode.HALF_UP)
+                        .toPlainString())
+                .priceChangeAbsolute(BigDecimal.valueOf(Math.abs(data.getPriceChange()))
+                        .setScale(8, RoundingMode.HALF_UP)
+                        .toPlainString())
+                .priceChangeDirection(data.getPriceChangeRate() < 0 ? "down" : "up")
+                .priceChangeRate(BigDecimal.valueOf(data.getPriceChangeRate())
+                        .setScale(8, RoundingMode.HALF_UP)
+                        .toPlainString())
                 .rankChangeDirection(rankDirection)
                 .build();
     }

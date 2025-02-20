@@ -13,13 +13,13 @@ public class ChartDataConverter {
         return ChartData.builder()
                 .memeCoin(memeCoin)
                 .recordedTime(LocalDateTime.now())
-                .price(new BigDecimal(response.getLastPrice()))
-                .priceChange(new BigDecimal(response.getPriceChange()))
-                .priceChangeRate(new BigDecimal(response.getPriceChangePercent()))
-                .weighted_average_price(new BigDecimal(response.getWeightedAvgPrice()))
+                .price(Double.parseDouble(response.getLastPrice()))
+                .priceChange(Double.parseDouble(response.getPriceChange()))
+                .priceChangeRate(Double.parseDouble(response.getPriceChangePercent()))
+                .weighted_average_price(Double.parseDouble(response.getWeightedAvgPrice()))
                 .volume(new BigDecimal(response.getVolume()))
-                .low_price(new BigDecimal(response.getLowPrice()))
-                .high_price(new BigDecimal(response.getHighPrice()))
+                .low_price(Double.parseDouble(response.getLowPrice()))
+                .high_price(Double.parseDouble(response.getHighPrice()))
                 .build();
     }
 }

@@ -6,6 +6,7 @@ import com.memesphere.domain.memecoin.entity.MemeCoin;
 import com.memesphere.domain.detail.dto.response.DetailGetResponse;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 
 public class DetailConverter {
 
@@ -26,14 +27,28 @@ public class DetailConverter {
     public static PriceInfoResponse toPriceInfoResponse(MemeCoin memeCoin, ChartData data) {
         return PriceInfoResponse.builder()
                 .coinId(memeCoin.getId())
-                .price(data.getPrice())
-                .priceChange(data.getPriceChange())
-                .priceChangeAbsolute(data.getPriceChange().abs())
-                .priceChangeDirection(data.getPriceChangeRate().compareTo(BigDecimal.ZERO) < 0 ? "down" : "up")
-                .priceChangeRate(data.getPriceChangeRate())
-                .weightedAveragePrice(data.getWeighted_average_price())
-                .highPrice(data.getHigh_price())
-                .lowPrice(data.getLow_price())
+                .price(BigDecimal.valueOf(data.getPrice())
+                        .setScale(8, RoundingMode.HALF_UP)
+                        .toPlainString())
+                .priceChange(BigDecimal.valueOf(data.getPriceChange())
+                        .setScale(8, RoundingMode.HALF_UP)
+                        .toPlainString())
+                .priceChangeAbsolute(BigDecimal.valueOf(Math.abs(data.getPriceChange()))
+                        .setScale(8, RoundingMode.HALF_UP)
+                        .toPlainString())
+                .priceChangeDirection(data.getPriceChangeRate() < 0 ? "down" : "up")
+                .priceChangeRate(BigDecimal.valueOf(data.getPriceChangeRate())
+                        .setScale(8, RoundingMode.HALF_UP)
+                        .toPlainString())
+                .weightedAveragePrice(BigDecimal.valueOf(data.getWeighted_average_price())
+                        .setScale(8, RoundingMode.HALF_UP)
+                        .toPlainString())
+                .highPrice(BigDecimal.valueOf(data.getHigh_price())
+                        .setScale(8, RoundingMode.HALF_UP)
+                        .toPlainString())
+                .lowPrice(BigDecimal.valueOf(data.getLow_price())
+                        .setScale(8, RoundingMode.HALF_UP)
+                        .toPlainString())
                 .build();
     }
 }

@@ -27,25 +27,25 @@ public class ChartData extends BaseEntity {
     private LocalDateTime recordedTime;
 
     @Column
-    private BigDecimal price;
+    private Double price;
 
     @Column
-    private BigDecimal priceChange;
+    private Double priceChange;
 
     @Column
-    private BigDecimal priceChangeRate;
+    private Double priceChangeRate;
 
     @Column
-    private BigDecimal weighted_average_price;
+    private Double weighted_average_price;
 
     @Column
     private BigDecimal volume;
 
     @Column
-    private BigDecimal low_price;
+    private Double low_price;
 
     @Column
-    private BigDecimal high_price;
+    private Double high_price;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "coin_id", nullable = false) // 외래 키

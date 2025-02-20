@@ -50,7 +50,7 @@ public class ChatController {
             description = "특정 코인에 대한 최신 댓글을 반환합니다. 요청 시 최신 댓글 하나만 가져옵니다.")
     public ApiResponse<ChatResponse> getLatestMessages(@PathVariable("coin_id") Long coin_id,
                                                        @AuthenticationPrincipal CustomUserDetails customUserDetails) {
-        User user = customUserDetails.getUser();
+        User user = (customUserDetails != null) ? customUserDetails.getUser() : null;
         // 최신 댓글을 가져오는 서비스 메서드 호출
         ChatResponse latestMessage = chatService.getLatestMessages(coin_id, user);
 

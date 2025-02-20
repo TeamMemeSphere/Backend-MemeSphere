@@ -1,5 +1,6 @@
 package com.memesphere.domain.dashboard.dto.response;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Builder;
 import lombok.Getter;
@@ -25,19 +26,19 @@ public class DashboardTrendResponse {
     private BigDecimal volume;
 
     @Schema(description = "현재가", example = "0.20")
-    private BigDecimal price;
+    private String price;
 
     @Schema(description = "가격 변화량", example = "-0.03")
-    private BigDecimal priceChange;
+    private String priceChange;
 
     @Schema(description = "가격 변화량 절대값", example = "0.03")
-    private BigDecimal priceChangeAbsolute;
+    private String priceChangeAbsolute;
 
     @Schema(description = "가격 변화 방향", example = "down")
     private String priceChangeDirection;
 
     @Schema(description = "가격 변화율", example = "-6.35")
-    private BigDecimal priceChangeRate;
+    private String priceChangeRate;
 
     @Schema(description = "순위 변화 방향", example = "down")
     private String rankChangeDirection;
