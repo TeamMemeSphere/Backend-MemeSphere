@@ -42,7 +42,8 @@ public class SecurityConfig {
                                 ,"/user/**"
                                 ,"/swagger-ui/**"
                                 ,"/swagger-resources/**"
-                                ,"/v3/api-docs/**").permitAll()
+                                ,"/v3/api-docs/**"
+                                , "/resources/**").permitAll()
                         .requestMatchers("/notification/**"
                                 ,"/push-notifications/**"
                                 ,"/collection").hasRole("USER")
