@@ -11,6 +11,7 @@ jobs:
       java-version: "17"
       distribution: "temurin"
       image-name: ${{ vars.MY_APP }}
+      write-application-yml: true
     secrets:
       DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
       DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
