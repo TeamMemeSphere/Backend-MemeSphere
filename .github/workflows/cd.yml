@@ -1,0 +1,19 @@
+name: Spring Boot & Gradle CD
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  cd:
+    uses: kjiyun/CI-CD-pipeline-standard/.github/workflows/java-gradle-cd.yml@master
+    with:
+      java-version: "17"
+      distribution: "temurin"
+      image-name: memesphere-app
+    secrets:
+      DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+      DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+      HOST_ID: ${{ secrets.EC2_HOST }}
+      USERNAME: ${{ secrets.EC2_USERNAME }}
+      PRIVATE_KEY: ${{ secrets.EC2_SSH_KEY }}
