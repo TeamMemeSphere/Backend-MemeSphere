@@ -10,7 +10,7 @@ jobs:
     with:
       java-version: "17"
       distribution: "temurin"
-      image-name: memesphere-app
+      image-name: ${{ vars.MY_APP }}
     secrets:
       DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
       DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
